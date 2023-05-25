@@ -1,0 +1,153 @@
+body{
+    background-color: #E2DDD0;
+    margin: 0;
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 16% 0% 5% 0%;
+    }
+    
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+
+.div1 {
+    background-color: #BCB19F;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 9px;
+    padding: 30px;
+}
+
+.div1 h1{
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.input-box {
+    padding: 5px;
+}
+
+.input-box label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input-box input{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 0px;
+    font-size: 16px;
+}
+
+.form-reg h2{
+    text-align: center;
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.input-box textarea {
+    height: 100px;
+    width: 300px;
+}
+
+
+/* footer */
+
+.fin {
+    background-color: #57461c;
+    color: white;
+}
+
+.logotipo {
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 100;
+    margin: 0;
+}
+
+.fin p{
+    margin: 0;
+}
+
+.fin h2{
+    text-align: center;
+}
+
+.fin {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .div1 {
+        padding: 10px;
+    }
+    
+    .form-reg h2 {
+        font-size: 17px;
+    }
+    
+    .inf-reg {
+        font-size: 15px;
+    }
+    
+    .input-box label {
+        font-size: 16px;
+    }
+    
+    .logotipo {
+        font-size: 17px;
+    }
+    
+    .fin p {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .div1 {
+        padding: 0px 0px 10px 0px;
+    }
+
+    .div1 h1 {
+        font-size: 24px;
+    }
+
+    .form-reg {
+        font-size: 0px;
+        width: 250px;
+    }
+
+    .input-box input {
+        height: 25px;
+    }
+
+    .input-box textarea {
+        height: 79px;
+        width: 232px;
+    }
+
+}

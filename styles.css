@@ -115,10 +115,8 @@ ul {
 /* inicio */
 
 .imagen{
-    background-image: linear-gradient(
-    0deg,rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)),url("assets/ParaisoArgentino.png");
-    height: 60em;
+    background-image: url("assets/ParaisoArgentino.png");
+    height: auto;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -128,33 +126,23 @@ ul {
 
 @keyframes animate {
     20% {
-        background-image: linear-gradient(
-            0deg,rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)),url("assets/2.png");
+        background-image: url("assets/2.png");
         background-size: cover;
     }
     40% {
-        background-image: linear-gradient(
-            0deg,rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)),url("assets/3.png");
+        background-image: url("assets/3.png");
         background-size: cover;
     }
     60% {
-        background-image: linear-gradient(
-            0deg,rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)),url("assets/5.png");
+        background-image: url("assets/5.png");
         background-size: cover;
     }
     80% {
-        background-image: linear-gradient(
-            0deg,rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)),url("assets/6.png");
+        background-image: url("assets/6.png");
         background-size: cover;
     }
     100% {
-        background-image: linear-gradient(
-            0deg,rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)),url("assets/1.png");
+        background-image: url("assets/1.png");
         background-size: cover;
     }
 }
@@ -164,9 +152,10 @@ ul {
     position: initial;
     color: white;
     font-size: 20px;
-    padding-top: 20%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 10%;
+    background-image: linear-gradient(
+        0deg,rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5));
 }
 
 .principio h1{
@@ -384,10 +373,11 @@ margin: 10px 20px 10px 20px;
 
 /* Inicio */
 
-.texto {
-    font-size: 28px;
-    padding-top: 30%;
+.principio {
+    padding: 30% 10% 30% 10%;
 }
+
+
 
 /* Habitaciones */
 
@@ -444,28 +434,13 @@ div.text-tarjeta {
 
 /* Inicio */
 
-.imagen {
-    height: 40em;
+.principio {
+    padding: 50% 10% 50% 10%;
 }
 
 .texto {
-    font-size: 0;
-    padding-top: 0%;
-    margin-top: 60%;
+    font-size: 28px;
 }
-
-.texto h1{
-    font-size: 24px;
-}
-
-.texto p{
-    font-size: 16px;
-}
-
-.boton {
-    font-size: 10px;
-}
-
 /* Habitaciones */
 
 .texto-habitaciones h2 {

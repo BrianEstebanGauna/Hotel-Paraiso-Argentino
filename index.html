@@ -24,7 +24,14 @@
         <header>
             <nav class="nav">
                 <input type="checkbox" id="list-menu">
-                <label for="list-menu"><img src="assets/menu.png" alt=""></label>
+                <label for="list-menu">
+                    <!-- <img src="assets/menu.png" alt=""> -->
+                    <div class="container" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </label>
                 <div class="logo">Hotel Paraiso Argentino</div>
     
                 <ul class="menu">
@@ -97,7 +104,6 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <section id="comentarios" class="comentario-h2">
@@ -152,10 +158,10 @@
             <p>Telefono: (123) 456-7890</p>
             <p>Email: paraisoargentino@gmail.com</p>
             <p>Social: 
-                <i class="fa-brands fa-facebook-f" style="color: #000000;"></i>
-                <i class="fa-brands fa-instagram" style="color: #000000;"></i>
-                <i class="fa-brands fa-twitter" style="color: #000000;"></i>
-                <i class="fa-brands fa-whatsapp" style="color: #000000;"></i>
+                <a href="https://es-la.facebook.com/" class="fa-brands fa-facebook-f" style="color: #000000;"></a>
+                <a href="https://www.instagram.com/" class="fa-brands fa-instagram" style="color: #000000;"></a>
+                <a href="https://twitter.com/?lang=es" class="fa-brands fa-twitter" style="color: #000000;"></a>
+                <a href="https://www.whatsapp.com/?lang=es" class="fa-brands fa-whatsapp" style="color: #000000;"></a>
             </p>
         </div>
         <div class="mapa">
@@ -173,5 +179,6 @@
             </div>
         </footer>
     </section>
+    <script src="index.js"></script>
 </body>
 </html>

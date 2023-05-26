@@ -9,6 +9,7 @@ body{
     justify-content: space-between;
 }
 
+/* form */
 
 .parent {
     display: grid;
@@ -45,7 +46,6 @@ body{
 
 .div2 h2{
     font-size: 25px;
-    color: #000000;
 }
 
 .input-box {

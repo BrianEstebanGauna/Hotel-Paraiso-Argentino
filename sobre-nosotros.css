@@ -1,0 +1,306 @@
+body{
+    background-color: #E2DDD0;
+    margin: 0;
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 95px;
+    color: #fff;
+    font-weight: 100;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.inicio p{
+    font-size: 33px;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.inicio {
+    background-color: black;
+    width: 100%;
+}
+
+/* Titulo */
+
+.inicio{
+    background-image: linear-gradient(
+        0deg,rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),url("assets/ParaisoArgentino.png");
+    height: auto;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parent1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 5% 5% 0% 5%;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 3 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 2 / 2 / 3 / 3; }
+
+    .parent1 h2{
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Courgette', cursive;
+    }
+    .parent1 p{
+        font-size: 27px;
+        font-family: 'courgette', cursive;
+    }
+
+    .parent1 div {
+        background-color: #BCB19F;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 9px;
+        padding: 30px;
+    }
+    .div1 {
+        background-image: url(assets/6.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: animate 30s infinite;
+        width: auto;
+        height: 80%;
+    }
+
+    .div3 {
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: 58%;
+    }
+
+    @keyframes animate {
+        20% {
+            background-image: url("assets/2.png");
+            background-size: cover;
+        }
+        40% {
+            background-image: url("assets/3.png");
+            background-size: cover;
+        }
+        60% {
+            background-image: url("assets/5.png");
+            background-size: cover;
+        }
+        80% {
+            background-image: url("assets/6.png");
+            background-size: cover;
+        }
+        100% {
+            background-image: url("assets/1.png");
+            background-size: cover;
+        }
+    }
+
+    /* convisiones */
+    .parent2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        padding: 0% 10% 4% 10%;
+        }
+        
+        .div4 { grid-area: 1 / 1 / 2 / 2; }
+        .div5 { grid-area: 1 / 2 / 2 / 3; }
+        .div6 { grid-area: 2 / 1 / 3 / 2; }
+        .div7 { grid-area: 2 / 2 / 3 / 3; }
+        .div8 { grid-area: 3 / 1 / 4 / 2; }
+        .div9 { grid-area: 3 / 2 / 4 / 3; }
+        .div10 { grid-area: 4 / 1 / 5 / 2; }
+        .div11 { grid-area: 4 / 2 / 5 / 3; }
+
+    .parent2 div {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 9px;
+        padding: 30px;
+    }
+
+    .parent2 h2{
+        font-size: 40px;
+        font-family: 'courgette', cursive;
+    }
+
+    .parent2 h3{
+        font-size: 30px;
+        font-family: 'courgette', cursive;
+    }
+
+    .parent2 p{
+        font-size: 25px;
+        font-family: 'courgette', cursive;
+    }
+    .div5{
+        background-color: #BCB19F;
+    }
+    .div6{
+        background-color: #BCB19F;
+    }
+    .div9{
+        background-color: #BCB19F;
+    }
+    .div10{
+        background-color: #BCB19F;
+    }
+
+    .div4{
+        background-color: #000000;
+        color: white;
+    }
+    .div7{
+        background-color: #000000;
+        color: white;
+    }
+    .div8{
+        background-color: #000000;
+        color: white;
+    }
+    .div11{
+        background-color: #000000;
+        color: white;
+        background-image: url(assets/2.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+    }
+    /* Historia */
+    .parent3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+        padding: 0% 10% 10% 10%;
+        }
+        
+        .div12 { grid-area: 1 / 1 / 2 / 3; }
+        .div13 { grid-area: 2 / 1 / 3 / 3; }
+
+        .parent3 div {
+            background-color: #BCB19F;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 9px;
+            padding: 30px;
+        }
+        .parent3 h2{
+            font-size: 40px;
+            font-family: 'courgette', cursive;
+        }
+        .parent3 p{
+            font-size: 25px;
+            font-family: 'courgette', cursive;
+        }
+        .div13{
+            background-image: url(assets/6.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: auto;
+            height: 80%;
+        }
+
+    /* Footer */
+
+    #contacto{
+        background-color: #57461c;
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .logotipo{
+        font-family: 'Mr Dafoe', cursive;
+        font-size: 35px;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .fin p{
+        margin: 0;
+    }
+
+    @media only screen and (max-width: 768px){
+        .parent1{
+            display: flex;
+            flex-direction: column;
+        }
+        .parent1 h2{
+            font-size: 26px;
+        }
+        .parent1 p{
+            font-size: 23px;
+        }
+        .daiv1{
+            display: none;
+        }
+
+        .parent2{
+            display: flex;
+            flex-direction: column;
+            padding-top: 10%;
+        }
+        .parent3{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media only screen and (max-width: 425px){
+        .logo{
+            font-size: 23px;
+        }
+        .inicio p{
+            font-size: 20px;
+        }
+        .parent1 h2{
+            font-size: 23px;
+        }
+        .parent2 p{
+            font-size: 17px;
+        }
+        .parent2 h2{
+            font-size: 23px;
+        }
+        .parent2 p{
+            font-size: 17px;
+        }
+        .parent2 h3{
+            font-size: 20px;
+        }
+        .parent3 h2{
+            font-size: 23px;
+        }
+        .parent3 p{
+            font-size: 17px;
+        }
+        .logotipo{
+            font-size: 23px;
+        }
+        .fin p{
+            font-size: 7px;
+        }
+    }

@@ -7,43 +7,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="ayuda.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/ayuda.css"/>
     <title>Paraiso Argentino</title>
-    <link rel="icon" type="image/x-icon" href="assets/hotel.png">
+    <link rel="icon" type="image/x-icon" href="/img/hotel.png">
 </head>
 <body>
-    <form action="" id="form">
+    <form id="form" action="" class="form">
         <div class="parent">
             <div class="div1">
                 <section class="form-reg">
-                    <h1>Hotel Paraiso Argentino</h1>
-                    <h2>Formulario de ayuda</h2>
+                    <h2 class="tag"><span>Formulario de Contacto</span></h2>
                     <div class="input-box">
-                        <label for="nombre">Nombre: </label><br><input class="inf-per" type="text" name="nombre" placeholder="Nombre" required>
+                        <label for="name">Nombre Completo: </label><br>
+                        <input class="inf-per" name="name" required type="text" id="name" placeholder="Nombre completo...">
                     </div>
                     <div class="input-box">
-                        <label for="apellido">Apellido: </label><br><input class="inf-per" type="text" name="apellido" placeholder="Apellido" required>
+                        <label for="email">Correo electrónico: </label><br>
+                        <input class="inf-per" name="email" type="text" id="email" required placeholder="ejemplo@gmail.com">
                     </div>
                     <div class="input-box">
-                        <label for="email">Email: </label><br><input class="inf-per" type="email" name="email" placeholder="Ejemplo@gmail.com" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="subject">Descripcion: </label><br>
-                        <textarea id="subject" name="subject" placeholder="Maximo 170 caracteres..." maxlength="170"></textarea>
+                        <label for="message">Mensaje: </label><br>
+                        <textarea class="inf-per" id="message" name="message" id="" cols="30" rows="10" placeholder="Maximo caracteres 170..." maxlength="170"></textarea>
                     </div>
                     <div class="submit">
-                        <input type="submit" value="Enviar">
+                        <button type="submit">Enviar</button>
                     </div>
                 </section>
                 <a href="mailto:brianestebangauna@gmail.com" id="correo"></a>
             </div>
         </div>
     </form>
-    
     <footer class="fin">
         <div><h2 class="logotipo">Hotel Paraiso Argentino</h2></div>
         <div><p>brianestebangauna@gmail.com</p></div>
     </footer>
-    <script src="ayuda.js"></script>
+    <script src="/js/contacto.js"></script>
 </body>
 </html>

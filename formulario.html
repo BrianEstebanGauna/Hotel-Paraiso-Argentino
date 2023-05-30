@@ -12,7 +12,7 @@
     <link rel="icon" type="image/x-icon" href="assets/hotel.png">
 </head>
 <body>
-    <form action="index.html">
+    <form id="formReserva" onsubmit="reservarHabitacion(event)">
         <div class="parent">
             <div class="div1">
                 <section class="form-reg">
@@ -21,7 +21,7 @@
                     <div class="carta">
                         <div class="input-box">
                             <label for="habitacion">Habitacion: </label>
-                            <select class="inf-reg" name="habitacion">
+                            <select class="inf-reg" name="habitacion" id="habitacion">
                                 <option>Habitacion Sencilla</option>
                                 <option>Habitacion Doble</option>
                                 <option>Habitacion King</option>
@@ -31,10 +31,10 @@
                             </select>
                         </div>
                         <div class="input-box">
-                            <label for="fentrada">Fecha Entrada: </label><input class="inf-reg" type="date" name="fechaentrada" required>
+                            <label for="fentrada">Fecha Entrada: </label><input class="inf-reg" type="date" name="fechaentrada" id="fechaentrada" required>
                         </div>
                         <div class="input-box">
-                            <label for="fsalida">Fecha Salida: </label><input class="inf-reg" type="date" name="fechasalida" required>
+                            <label for="fsalida">Fecha Salida: </label><input class="inf-reg" type="date" name="fechasalida" id="fechasalida" required>
                         </div>
                     </div>
                 </section>
@@ -44,16 +44,16 @@
                         <h2>Informacion Personal</h2>
                         <div class="carta">
                             <div class="input-box">
-                                <label for="nombre">Nombre: </label><input class="inf-per" type="text" name="nombre" placeholder="Nombre" required>
+                                <label for="nombre">Nombre: </label><input class="inf-per" type="text" name="nombre" placeholder="Nombre" id="nombre" required>
                             </div>
                             <div class="input-box">
-                                <label for="apellido">Apellido: </label><input class="inf-per" type="text" name="apellido" placeholder="Apellido" required>
+                                <label for="apellido">Apellido: </label><input class="inf-per" type="text" name="apellido" placeholder="Apellido" id="apellido" required>
                             </div>
                             <div class="input-box">
-                                <label for="email">Email: </label><input class="inf-per" type="email" name="email" placeholder="Ejemplo@gmail.com" required>
+                                <label for="email">Email: </label><input class="inf-per" type="email" name="email" placeholder="Ejemplo@gmail.com" id="email" required>
                             </div>
                             <div class="input-box">
-                                <label for="telefono">Telefono: </label><input class="inf-per" type="tel" name="telefono" placeholder="1112345678" pattern="[0-9]{10}" required>
+                                <label for="telefono">Telefono: </label><input class="inf-per" type="tel" name="telefono" id="telefono" placeholder="1112345678" pattern="[0-9]{10}" required>
                             </div>
                         </div>
                         <div class="submit">

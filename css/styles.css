@@ -115,7 +115,7 @@ ul {
 /* inicio */
 
 .imagen{
-    background-image: url("/img/ParaisoArgentino.png");
+    background-image: url("../img/ParaisoArgentino.png");
     height: auto;
     width: 100%;
     background-position: center center;
@@ -126,23 +126,23 @@ ul {
 
 @keyframes animate {
     20% {
-        background-image: url("/img/2.png");
+        background-image: url("../img/2.png");
         background-size: cover;
     }
     40% {
-        background-image: url("/img/3.png");
+        background-image: url("../img/3.png");
         background-size: cover;
     }
     60% {
-        background-image: url("/img/5.png");
+        background-image: url("../img/5.png");
         background-size: cover;
     }
     80% {
-        background-image: url("/img/6.png");
+        background-image: url("../img/6.png");
         background-size: cover;
     }
     100% {
-        background-image: url("/img/1.png");
+        background-image: url("../img/1.png");
         background-size: cover;
     }
 }

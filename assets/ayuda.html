@@ -12,30 +12,61 @@
     <link rel="icon" type="image/x-icon" href="../img/hotel.png">
 </head>
 <body>
-    <form action="" id="form">
+    <form action="" id="formulario" class="formulario">
         <div class="parent">
             <div class="div1">
                 <section class="form-reg">
                     <h1>Hotel Paraiso Argentino</h1>
                     <h2>Formulario de ayuda</h2>
-                    <div class="input-box">
-                        <label for="nombre">Nombre: </label><br><input class="inf-per" type="text" name="nombre" placeholder="Nombre" required>
+
+                    <div class="formulario__grupo input-box" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre: </label>
+                        <div class="formulario__grupo-input">
+                            <input class="formulario__input inf-per" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El nombre tiene que ser de 2 a 16 dígitos <br>y solo puede contener letras</p>
                     </div>
-                    <div class="input-box">
-                        <label for="apellido">Apellido: </label><br><input class="inf-per" type="text" name="apellido" placeholder="Apellido" required>
+
+                    <div class="formulario__grupo input-box" id="grupo__apellido">
+                        <label for="apellido" class="formulario__label">Apellido: </label>
+                        <div class="formulario__grupo-input">
+                            <input class="formulario__input inf-per" type="text" name="apellido" id="apellido" placeholder="Apellido">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El apellido tiene que ser de 2 a 16 dígitos <br>y solo puede contener letras</p>
                     </div>
-                    <div class="input-box">
-                        <label for="email">Email: </label><br><input class="inf-per" type="email" name="email" placeholder="Ejemplo@gmail.com" required>
+
+                    <div class="formulario__grupo input-box" id="grupo__email">
+                        <label for="email" class="formulario__label">Email: </label>
+                        <div class="formulario__grupo-input">
+                            <input class="formulario__input inf-per" type="email" name="email" id="email" placeholder="Ejemplo@gmail.com">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos,<br> guiones y guion bajo.</p>
                     </div>
+
                     <div class="input-box">
                         <label for="subject">Descripcion: </label><br>
                         <textarea id="subject" name="subject" placeholder="Maximo 170 caracteres..." maxlength="170"></textarea>
                     </div>
-                    <div class="submit">
-                        <input type="submit" value="Enviar">
+
+                    <div class="formulario__grupo" id="grupo__terminos">
+                        <label class="formulario__label">
+                            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                            Acepto los Terminos y Condiciones
+                        </label>
+                    </div>
+
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                    </div>
+
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                     </div>
                 </section>
-                <a href="mailto:brianestebangauna@gmail.com" id="correo"></a>
             </div>
         </div>
     </form>
@@ -45,5 +76,6 @@
         <div><p>brianestebangauna@gmail.com</p></div>
     </footer>
     <script src="../js/ayuda.js"></script>
+    <script src="https://kit.fontawesome.com/a0ee3f6fbc.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -12,16 +12,17 @@
     <link rel="icon" type="image/x-icon" href="../img/hotel.png">
 </head>
 <body>
-    <form id="formReserva" onsubmit="reservarHabitacion(event)">
+    <form id="formulario" class="formulario" onsubmit="reservarHabitacion(event)">
+        <!--  -->
         <div class="parent">
             <div class="div1">
                 <section class="form-reg">
                     <h1>Hotel Paraiso Argentino</h1>
                     <h2>Informacion de Reservacion</h2>
                     <div class="carta">
-                        <div class="input-box">
-                            <label for="habitacion">Habitacion: </label>
-                            <select class="inf-reg" name="habitacion" id="habitacion">
+                        <div class="formulario__grupo input-box">
+                            <label for="habitacion" class="formulario__label">Habitacion: </label>
+                            <select class="formulario__grupo-input inf-reg" name="habitacion" id="habitacion">
                                 <option>Habitacion Sencilla</option>
                                 <option>Habitacion Doble</option>
                                 <option>Habitacion King</option>
@@ -30,36 +31,77 @@
                                 <option>Habitacion Suite King</option>
                             </select>
                         </div>
-                        <div class="input-box">
-                            <label for="fentrada">Fecha Entrada: </label><input class="inf-reg" type="date" name="fechaentrada" id="fechaentrada" required>
+                        <div class="formulario__grupo input-box" id="grupo__entrada">
+                            <label for="fentrada" class="formulario__label">Fecha Entrada: </label>
+                            <div class="formulario__grupo-input">
+                                <input class="formulario__input inf-reg" type="date" name="fechaentrada" id="fechaentrada" required>
+                            </div>
                         </div>
-                        <div class="input-box">
-                            <label for="fsalida">Fecha Salida: </label><input class="inf-reg" type="date" name="fechasalida" id="fechasalida" required>
+                        <div class="formulario__grupo input-box" id="grupo__salida">
+                            <label for="fsalida" class="formulario__label">Fecha Salida: </label>
+                            <div class="formulario__grupo-input">
+                                <input class="formulario__input inf-reg" type="date" name="fechasalida" id="fechasalida" required>
+                            </div>
                         </div>
                     </div>
                 </section>
             </div>
             <div class="div2">
-                    <section class="form-reg">
-                        <h2>Informacion Personal</h2>
-                        <div class="carta">
-                            <div class="input-box">
-                                <label for="nombre">Nombre: </label><input class="inf-per" type="text" name="nombre" placeholder="Nombre" id="nombre" required>
-                            </div>
-                            <div class="input-box">
-                                <label for="apellido">Apellido: </label><input class="inf-per" type="text" name="apellido" placeholder="Apellido" id="apellido" required>
-                            </div>
-                            <div class="input-box">
-                                <label for="email">Email: </label><input class="inf-per" type="email" name="email" placeholder="Ejemplo@gmail.com" id="email" required>
-                            </div>
-                            <div class="input-box">
-                                <label for="telefono">Telefono: </label><input class="inf-per" type="tel" name="telefono" id="telefono" placeholder="1112345678" pattern="[0-9]{10}" required>
-                            </div>
+                <section class="form-reg">
+                    <h2>Informacion Personal</h2>
+
+                    <div class="formulario__grupo input-box" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre: </label>
+                        <div class="formulario__grupo-input">
+                            <input class="formulario__input inf-per" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
-                        <div class="submit">
-                            <input  type="submit" value="Reservar">
+                        <p class="formulario__input-error">El nombre tiene que ser de 2 a 16 dígitos <br>y solo puede contener letras</p>
+                    </div>
+
+                    <div class="formulario__grupo input-box" id="grupo__apellido">
+                        <label for="apellido" class="formulario__label">Apellido: </label>
+                        <div class="formulario__grupo-input">
+                            <input class="formulario__input inf-per" type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
-                    </section>
+                        <p class="formulario__input-error">El apellido tiene que ser de 2 a 16 dígitos <br>y solo puede contener letras</p>
+                    </div>
+
+                    <div class="formulario__grupo input-box" id="grupo__email">
+                        <label for="email" class="formulario__label">Email: </label>
+                        <div class="formulario__grupo-input">
+                            <input class="formulario__input inf-per" type="email" name="email" id="email" placeholder="Ejemplo@gmail.com" required>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos,<br> guiones y guion bajo.</p>
+                    </div>
+
+                    <div class="formulario__grupo input-box" id="grupo__telefono">
+                        <label for="telefono" class="formulario__label">Telefono: </label>
+                        <div class="formulario__grupo-input">
+                            <input class="formulario__input inf-per" type="text" name="telefono" id="telefono" placeholder="1112345678" required>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                    </div>
+
+                    <div class="formulario__grupo" id="grupo__terminos">
+                        <label class="formulario__label">
+                            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos" required>
+                            Acepto los Terminos y Condiciones
+                        </label>
+                    </div>
+
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                    </div>
+
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                    </div>
+                </section>
             </div>
         </div>
     </form>
@@ -69,5 +111,6 @@
         <div><p>brianestebangauna@gmail.com</p></div>
     </footer>
     <script src="../js/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/a0ee3f6fbc.js" crossorigin="anonymous"></script>
 </body>
 </html>
